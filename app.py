@@ -22,7 +22,7 @@ st.markdown("Create audio or video bookmarks and download a clean PDF report.")
 # ---------------------
 with st.expander("📘 How to Use This App"):
     st.markdown("""
-    1. **Upload** an `.mp4` or `.m4a` file (optional – just for context).
+    1. **Upload** an `.mp4` or `.m4a` file.
     2. **Add bookmarks** using start time, end time, and a title.
     3. Use the ✏️ **Edit** or 🗑 **Delete** buttons to update your list.
     4. Click **Generate PDF Report** to download a summary.
