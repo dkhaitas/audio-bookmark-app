@@ -73,7 +73,8 @@ if st.session_state.bookmarks:
 
         if col3.button("🗑 Delete", key=f"delete_{i}"):
             st.session_state.bookmarks.pop(i)
-            st.experimental_rerun()
+            st.rerun()
+
 
 # ---------------------
 # 📝 Edit Form
@@ -88,7 +89,8 @@ if st.session_state.edit_index is not None:
             i = st.session_state.edit_index
             st.session_state.bookmarks[i] = (new_start, new_end, new_title)
             st.session_state.edit_index = None
-            st.experimental_rerun()
+            st.rerun()
+
 
 # ---------------------
 # 📄 Generate PDF
